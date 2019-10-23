@@ -21,6 +21,7 @@ namespace ProjetoSalesWebMvc
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+
                 });
     }
 }
