@@ -25,6 +25,17 @@ namespace ProjetoSalesWebMvc.Controllers
 
         public IActionResult Privacy()
         {
+            ViewData["Message"] = "Your application description page." ;
+            ViewData["Email"] = "williamhenrquecirino@hotmail.com.";
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Your application page.";
+            ViewData["Email"] = "williamhenrquecirino@hotmail.com.";
+
+
             return View();
         }
 
