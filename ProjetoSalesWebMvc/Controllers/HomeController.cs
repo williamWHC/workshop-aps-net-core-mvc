@@ -27,13 +27,16 @@ namespace ProjetoSalesWebMvc.Controllers
         {
             ViewData["Message"] = "Your application description page." ;
             ViewData["Email"] = "williamhenrquecirino@hotmail.com.";
+            ViewData["Home"] = "Teste de aplicação";
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application page.";
-            ViewData["Email"] = "williamhenrquecirino@hotmail.com.";
+            ViewData["TitleAbout"] = "Test Page About";
+            ViewData["MessageAbout"] = "Your application page.";
+            ViewData["EmailAbout"] = "williamhenrquecirino@hotmail.com.";
+            ViewData["HomeAbout"] = "WWW.COM.BR";
 
 
             return View();
